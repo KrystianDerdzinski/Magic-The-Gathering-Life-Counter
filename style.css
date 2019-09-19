@@ -1,0 +1,280 @@
+html{
+	background: url('tlo.png') no-repeat center center fixed;
+	background-size: cover;
+}
+
+* {
+	font-family: 'Aladin', cursive;
+	
+
+	/* blocking the text selection*/
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+
+}
+
+header{
+	font-size: 16px;
+	font-weight: 200;
+	text-align: center;
+	letter-spacing: 5px;
+	color: gray;
+	border-bottom: 1px solid gray;
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*#main{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	height: 100%;
+}*/
+
+#container{
+	/*display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;*/
+	width: 100%;
+	margin: auto;
+	/*border: 3px solid white;*/
+	align-items: center;
+	position: relative;
+	height: 300px;
+}
+
+#left{
+	position: absolute;
+	top: 50%;
+	margin-left: 20px;
+	opacity: 0.95;
+	text-shadow: 3px 3px #000;
+	font-size: 60px;
+	font-weight: 600;
+	color: lightgray;
+}
+
+#right{
+	position:absolute;
+	top:50%;
+	right:0;
+	margin-right: 20px;
+	opacity: 0.95;
+	text-shadow: 3px 3px #000;
+	font-size: 60px;
+	font-weight: 600;
+	color: lightgray;
+}
+
+/*Decreasing life of player1*/
+
+.minusL
+{
+	cursor: pointer;
+	display: inline-block;
+}
+
+.minusOneL
+{
+	font-size: 30px;
+	text-align: center;
+	transition: transform 1s ease-in-out;
+}
+
+.minusOneL:hover
+{
+	font-size: 30px;
+	text-align: center;
+	opacity: 1;
+	-webkit-transform: scale(1.3);
+		-ms-transform: scale(1.3);
+			transform: scale(1.3);
+}
+
+
+.minusFiveL{
+	font-size: 18px;
+	transition: transform 1s ease-in-out;
+}
+
+.minusFiveL:hover{
+	opacity: 1;
+	-webkit-transform: scale(1.3);
+		-ms-transform: scale(1.3);
+			transform: scale(1.3);
+}
+
+/*Player1 life inreasing*/
+
+.plusL
+{
+	cursor: pointer;
+	display: inline-block;
+}
+
+.plusOneL
+{
+	font-size: 30px;
+	text-align: center;
+	transition: transform 1s ease-in-out;
+}
+
+.plusOneL:hover
+{
+	opacity: 1;
+	-webkit-transform: scale(1.3);
+		-ms-transform: scale(1.3);
+			transform: scale(1.3);
+}
+
+.plusFiveL{
+	font-size: 18px;
+	transition: transform 1s ease-in-out;
+}
+
+.plusFiveL:hover{
+	opacity: 1;
+	-webkit-transform: scale(1.3);
+		-ms-transform: scale(1.3);
+			transform: scale(1.3);
+}
+
+.counterL
+{
+	display: inline-block;
+	width:70px;
+	text-align:center;
+	transition: all .5s ease-in-out;
+	
+}
+
+/*Player2 life decreasing*/
+
+.minusP
+{
+	cursor: pointer;
+	display: inline-block;
+}
+
+.minusOneP
+{
+	font-size: 30px;
+	text-align: center;
+	transition: transform 1s ease-in-out;
+}
+
+.minusOneP:hover
+{
+	font-size: 30px;
+	text-align: center;
+	opacity: 1;
+	-webkit-transform: scale(1.3);
+		-ms-transform: scale(1.3);
+			transform: scale(1.3);
+}
+
+.minusFiveP{
+	font-size: 18px;
+	transition: transform 1s ease-in-out;
+}
+
+.minusFiveP:hover
+{
+	opacity: 1;
+	-webkit-transform: scale(1.3);
+		-ms-transform: scale(1.3);
+			transform: scale(1.3);
+}
+
+/*player 2 life increasing*/
+
+.plusP
+{
+	cursor: pointer;
+	display: inline-block;
+}
+
+.plusOneP
+{
+	font-size: 30px;
+	text-align: center;
+	transition: transform .5s ease-in-out;
+}
+
+.plusOneP:hover
+{
+	opacity: 1;
+	-webkit-transform: scale(1.3);
+		-ms-transform: scale(1.3);
+			transform: scale(1.3);
+}
+
+.plusFiveP{
+	font-size: 18px;
+	transition: transform 1s ease-in-out;
+}
+
+.plusFiveP:hover
+{
+	opacity: 1;
+	-webkit-transform: scale(1.3);
+		-ms-transform: scale(1.3);
+			transform: scale(1.3);
+}
+
+.counterP
+{
+	display: inline-block;
+	width:70px;
+	text-align:center;
+	transition: all .5s ease-in-out;
+	
+}
+
+#restart{
+	color: gray;
+	letter-spacing: 2px;
+	text-align: center;
+	font-size: 18px;
+	opacity: 0.5;
+}
+
+#restart:hover{
+	color: white;
+	cursor: pointer;
+}
+
+#footer
+{
+	font-size: 10px;
+	font-weight: 100;
+	letter-spacing: 3px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	opacity: 0.4
+}
+
+#footer a:hover{
+	color: white;
+	transform: scale(1.3);
+}
+
+a{
+	text-decoration: none;
+	color: grey;
+}
+
+a:visited{
+	text-decoration: none;
+}
